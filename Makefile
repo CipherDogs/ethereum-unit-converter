@@ -2,6 +2,10 @@
 install:
 	npm install --global elm elm-format uglify-js
 
+.PHONY: init
+init:
+	elm init
+
 .PHONY: format-fix-all
 format-fix-all:
 	elm-format --yes .
